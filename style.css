@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:url(/image/paper\ ku.jpg);
+    font-family:sans-serif ;
+    background-position: center;
+    background-size: 190%;
+    height: 100vh;
+}
+
+header {
+    position:absolute;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: rgb(83, 83, 83);
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    float: left;
+    font-weight:bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: black;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: grey;
+    color:#ffffff
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+
+header nav ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: auto;
+    background-color: gray;
+}
+
+.dropdown-menu ul{
+    display: block;
+    margin: 0 1px;
+}
+
+.dropdown-menu ul li{
+    width: 115px;
+    padding: 8px;
+}

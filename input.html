@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-pemesanan</title>
+    <style>
+        .input {
+            padding: 50px 0 0 0;
+            align-items: center;
+        }
+
+        .headtext {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .inputpesanan{
+            text-align: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Pizza Aqsha</div>
+        <nav>
+            <ul>
+                <li><a href="form.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#" class="active">Contact <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-menu">
+                        <ul>
+                            <li><a href="https://wa.me/6285715203770">Whatsapp</a></li>
+                            <li><a href="https://www.instagram.com/aqshayudha_75/">Instagram</a></li>
+                            <li><a href="https://www.linkedin.com/in/aqsha-yudha-3bbb10292/">Linkedin</a></li>
+                            <li><a href="https://github.com/AqshaYudhaYusro">Github</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+    </header>
+    <div class="input">
+        <h1 class="headtext">Input Pemesanan Pizza</h1>
+        <div class="inputpesanan">
+            <form action="hasil.html" method="post">
+                <label for="Nama">Nama :</label>
+                <input type="text" id="nama" name="nama" required />
+                <br>
+                <br>
+                <label for="usia">Usia :</label>
+                <input type="number" id="usia" name="Usia" required />
+                <br>
+                <br>
+                <label for="alamat">Alamat :</label>
+                <textarea cols="24" rows="2"></textarea>
+                <br>
+                <br>
+               
+                <label for="foto">No Rumah :</label>
+                <input type="file" id="foto" name="foto" accept="" />
+                <br>
+                <br>
+                <label for="kota">Kota :</label>
+                <select id="kota" name="kota">
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bandung">Bandung</option>
+                    <option value="Surabaya">Surabaya</option>
+                    <option value="Bogor">Bogor</option>
+                </select>
+                <br>
+                <br>
+                <label for="kota">Nama Pizza :</label>
+                <select id="pizza" name="pizza">
+                    <option value="AMERICAN FAVOURITE">AMERICAN FAVOURITE</option>
+                    <option value="CHEESEBURGER">CHEESEBURGER</option>
+                    <option value="CHEESE LOVERS">CHEESE LOVERS</option>
+                </select>
+                <br>
+                <br>
+                <label>Topping Tambahan:</label>
+                <input type="checkbox" name="hobi" id="makan" value="makan" />Smoke beef
+                <input type="checkbox" name="hobi" id="tidur" value="tidur" />Sosis
+                <input type="checkbox" name="hobi" id="main" value="main" />Mushroom
+                <br>
+                <br>
+                <label for="usia">Jumlah Pesanan :</label>
+                <input type="number" id="jumlah pesanan" name="jumlah pesanan" required />
+                <br>
+                <br>
+                <input type="submit" value="kirim" />
+                <input type="reset" value="ulang" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
